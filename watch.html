@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATCH TIMER</title>
+    <style>
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2017/02/13/05/26/stopwatch-2061851_1280.jpg);
+        }
+        marquee{
+            font-size: xx-large;
+            color:orangered
+        }
+        #x{
+            font-family: Arial, sans-serif;
+      font-size: 2em;
+      background-color: greenyellow;
+      padding: 5px;
+      border-radius: 8px;
+      margin:0 auto;
+      box-shadow: 0 0 20px darkorchid;
+      position: relative;
+      
+        }
+        button{
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="right" scrollamount="15" ><b>WELCOME TO STOPWATCH WEB!!!
+        LET'S TRAP TIME!!!</b>
+    </marquee>
+    <div style="text-align: center;">
+        <p style="font-size: large; color: chartreuse;"><b>TIMER</b></p>
+        <p style="font-size:xx-large;" id="x">00:00:00</p>
+    </div>
+    <div style="text-align: center;">
+    <button style="margin-top: 200px; color:brown;background-color: cornflowerblue;" onclick="starttime()" >START</button>
+    <br><br>
+    
+    <button onclick="stoptime()" style="color:brown;background-color: gold;" >STOP</button>
+    <br><br>
+    <button onclick="reset()" style="color:brown;background-color:lawngreen">RESET</button>
+    <br><br>
+    <button onclick="increment()" style="color:brown;background-color: fuchsia;">INCREMENT</button>
+    <br><br>
+    <button onclick="decrement()" style="color:brown;background-color: aqua; ">DECREMENT</button>
+    </div>
+    <marquee behavior="scroll" direction="right" scrollamount="10" style="color:gold" ><b>TIME IS MONEY,INVEST IT WELL!!!
+       </b></marquee>
+    <script src="watch.js"></script>
+</body>
+</html>
